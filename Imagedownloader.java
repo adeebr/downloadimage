@@ -11,7 +11,7 @@ import java.net.URL;
 
 import javax.imageio.ImageIO;
 
-public class Image_downloader {
+public class Imagedownloader {
 	public static void main (String[] args) throws IOException {
 		URL url;
 		InputStream is = null;
@@ -59,7 +59,7 @@ public class Image_downloader {
 		  Image image = ImageIO.read(imageurl);
 
 		  BufferedImage bi = (BufferedImage) image;
-		  File outputfile = new File("c://Header_image.jpg");
+		  File outputfile = new File("Header_image.jpg");
 		  ImageIO.write(bi, "jpg", outputfile);
 
 	}
